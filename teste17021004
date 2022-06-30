@@ -1,0 +1,75 @@
+#include #include int main()
+{
+int dia, mes, ano, k = 2;
+float a, b, c, d, e;
+dia = 17;
+mes = 03;
+ano = 2004;
+a = dia - 10;
+b = mes - dia;
+c = ano - 2000;
+d = dia + mes - 23;
+e = d - c + a;
+a += 5;
+b = b + 3 * a;
+switch(mes){
+case 1:
+case 2:
+case 3:
+a = a + 17;
+b = b - 2;
+c = c * 1 - 2;
+d = dia + dia * 2;
+e = dia * 2 + (a + 15);
+break;
+case 4:
+case 5:
+a = dia + dia * 2;
+b = c * 1 - 2;
+c = mes - dia;
+d = b * 2;
+e = mes * 2 + (d + 15);
+break;
+case 6:
+case 7:
+a = dia - 10;
+b = mes + 10;
+c = (ano - 1980) - 20 *
+mes;
+d = dia + mes - (ano -
+1980);
+e = (ano - 1980) * 3 + (e +
+15);
+break;
+case 8:
+case 9:
+a = dia + dia * 2;
+b = c * 1 - 2;
+c = mes - dia;
+d = b * b - 2;
+e = mes * 2 + (d + 15);
+break;
+case 10:
+case 11:
+case 12:
+a = dia * 2;
+b = c * 2 - 2;
+c = mes - dia + 5;
+d = mes * 2 - 15;
+e = dia * 2 + (d + 15);
+break;
+default:
+a = mes * 2 - 8;
+b = dia * 2 - 1;
+c = mes + dia * 2;
+d = mes * 3;
+e = dia * 2 + (dia + 15);
+} // Fim do switch.
+a = a + b + k;
+b = b + c + k;
+c = c + d + k;
+d = d - e - k;
+e = e - a - k;
+printf("\na = %f, b = %f, c = %f, d = %f, e = %f", a, b, c, d, e);
+return 0;
+}
